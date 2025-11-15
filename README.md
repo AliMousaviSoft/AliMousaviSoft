@@ -1,5 +1,5 @@
 ## 👋 Who am I?
-I'm Ali known as MrGray — a full-time bug bounty hunter and sysadmin who enjoys breaking things *legally* and fixing things *reluctantly*.  
+I'm Ali also known as MrGray — a full-time bug bounty hunter and sysadmin who enjoys breaking things *legally* and fixing things *reluctantly*.  
 Security, automation, and threat-hunting keep me entertained… caffeine keeps me alive.
 
 ## 🔧 What am I currently working on?
