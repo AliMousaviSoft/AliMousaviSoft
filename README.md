@@ -1,7 +1,7 @@
 👋 Who am I?
 ------------
 
-I'm Ali (MrGray) --- a full-time bug bounty hunter and sysadmin.
+I'm Ali (MrGray), a full-time bug bounty hunter and sysadmin.
 
 I specialize in finding real-world vulnerabilities by thinking like an attacker, not a checklist. I spend most of my time breaking applications, exploring edge cases, and building tools to automate the boring parts of recon and testing.
 
