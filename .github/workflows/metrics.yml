@@ -57,22 +57,13 @@ jobs:
           # REPOSITORIES (your real signal)
           # ─────────────────────────────
           plugin_repositories: yes
-          plugin_repositories_featured: AliMousaviSoft/Hunt-kit,AliMousaviSoft/pentest-guide,AliMousaviSoft/sondra,AliMousaviSoft/subjackal
+          plugin_repositories_featured: AliMousaviSoft/sondra,AliMousaviSoft/subjackal,AliMousaviSoft/Hunt-kit
           # ─────────────────────────────
           # ACTIVITY (safe mode)
           # ─────────────────────────────
           plugin_activity: yes
           plugin_activity_limit: 5
           plugin_activity_days: 14
-
-          # ─────────────────────────────
-          # HABITS (FIXED — no chart crash risk)
-          # ─────────────────────────────
-          plugin_habits: yes
-          plugin_habits_from: 100
-          plugin_habits_days: 7
-          plugin_habits_facts: yes
-          plugin_habits_charts: no
 
           # ─────────────────────────────
           # CODE METRICS
