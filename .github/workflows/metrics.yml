@@ -5,6 +5,9 @@ on:
     - cron: "0 0 * * *"
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   github-metrics:
     runs-on: ubuntu-latest
@@ -16,40 +19,67 @@ jobs:
           token: ${{ secrets.METRICS_TOKEN }}
 
           template: classic
-          base: header, activity, community, repositories, metadata
+          base: header, activity, repositories, metadata
 
           config_timezone: America/New_York
 
+          # ─────────────────────────────
+          # CORE IDENTITY (stable + meaningful)
+          # ─────────────────────────────
           plugin_isocalendar: yes
-          plugin_isocalendar_duration: full-year
+          plugin_isocalendar_duration: half-year
 
           plugin_languages: yes
           plugin_languages_limit: 6
           plugin_languages_sections: most-used
           plugin_languages_details: bytes-size, percentage
 
+          # ─────────────────────────────
+          # ACHIEVEMENTS (stable mode only)
+          # ─────────────────────────────
           plugin_achievements: yes
           plugin_achievements_display: compact
+          plugin_achievements_limit: 6
 
+          # ─────────────────────────────
+          # TOPICS (clean signal)
+          # ─────────────────────────────
           plugin_topics: yes
           plugin_topics_limit: 6
 
+          # ─────────────────────────────
+          # STARS (reduced noise)
+          # ─────────────────────────────
           plugin_stars: yes
-          plugin_stars_limit: 6
+          plugin_stars_limit: 3
 
-          plugin_followup: yes
-
+          # ─────────────────────────────
+          # REPOSITORIES (your real signal)
+          # ─────────────────────────────
           plugin_repositories: yes
           plugin_repositories_featured: AliMousaviSoft/Hunt-kit,AliMousaviSoft/pentest-guide,AliMousaviSoft/sondra,AliMousaviSoft/subjackal
-
+          # ─────────────────────────────
+          # ACTIVITY (safe mode)
+          # ─────────────────────────────
           plugin_activity: yes
           plugin_activity_limit: 5
           plugin_activity_days: 14
 
+          # ─────────────────────────────
+          # HABITS (FIXED — no chart crash risk)
+          # ─────────────────────────────
+          plugin_habits: yes
+          plugin_habits_from: 100
+          plugin_habits_days: 7
+          plugin_habits_facts: yes
+          plugin_habits_charts: no
+
+          # ─────────────────────────────
+          # CODE METRICS
+          # ─────────────────────────────
           plugin_lines: yes
 
-          plugin_habits: yes
-          plugin_habits_from: 200
-          plugin_habits_days: 14
-          plugin_habits_facts: yes
-          plugin_habits_charts: yes
+          # ─────────────────────────────
+          # CLEAN OUTPUT (IMPORTANT)
+          # ─────────────────────────────
+          plugin_errors: hide
