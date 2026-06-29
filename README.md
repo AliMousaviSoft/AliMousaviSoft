@@ -31,9 +31,3 @@ If it can misbehave, I'll probably find a way to make it.
 - Twitter/X: **[also follow me here](https://x.com/Imalimousavi)**
 
 (If I’m slow to respond, I’m probably inside something I shouldn’t be… or fixing something that was never supposed to break.)
-
----
-
-## 📊 GitHub Metrics
-
-![Metrics](https://raw.githubusercontent.com/AliMousaviSoft/AliMousaviSoft/main/github-metrics.svg)
