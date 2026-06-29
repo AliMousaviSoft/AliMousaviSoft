@@ -12,5 +12,6 @@ jobs:
         uses: lowlighter/metrics@latest
         with:
           user: AliMousaviSoft
+          token: ${{ secrets.METRICS_TOKEN }}
           template: classic
           base: header, activity, community, repositories
