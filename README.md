@@ -54,11 +54,5 @@ Full-time bug bounty hunter and security researcher focused on web application a
   <img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=AliMousaviSoft&bg_color=00000000&color=ff0000&line=ff0000&point=c9d1d9&area=true&hide_border=true" alt="activity graph" />
 </p>
 
-### 💭 Dev Quote
-
-<p align="center">
-  <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight" alt="Dev quote" />
-</p>
-
 ---
 <p align="center"><i>⭐️ From <a href="https://github.com/AliMousaviSoft">AliMousaviSoft</a></i></p>
